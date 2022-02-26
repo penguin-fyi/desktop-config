@@ -1,0 +1,62 @@
+* {
+    fg: #d4d4d4ff;
+    bg: #3c3c3cff;
+    focus: #729fcfff;
+    background-color: @bg;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 320px;
+    font: "Bitstream Vera Sans 10.0";
+    border-radius: 2;
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+entry {
+  background-color: inherit;
+  padding: 4px 0px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 4px;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-icon, element-text];
+}
+
+element-icon {
+  padding: 4px 4px;
+}
+
+element-icon selected {
+  padding: 10px 10px;
+  background-color: @focus;
+}
+
+element-text {
+  padding: 4px 0;
+  text-color: inherit;
+}
+
+element-text selected {
+  text-color: @bg;
+  background-color: @focus;
+}
+

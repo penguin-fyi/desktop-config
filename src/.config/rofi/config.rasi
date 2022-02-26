@@ -1,0 +1,28 @@
+configuration {
+    modi:                   "drun,run,window";
+    terminal:               "rofi-sensible-terminal";
+    show-icons:             true;
+    sort:                   true;
+    fixed-num-lines:        false;
+    click-to-exit:          true;
+    yoffset: -120;
+
+    display-drun:           "Start >";
+    display-run:            "Run >";
+    display-window:         "Focus >";
+    display-ssh:            "Connect >";
+    display-filebrowser:    "Browse >";
+
+    filebrowser {
+        directory:          "~/";
+        sorting-method:     "name";
+        directories-first:  true;
+    }
+
+    timeout {
+        delay: 10;
+        action: "kb-cancel";
+    }
+}
+
+@theme "awesome"
