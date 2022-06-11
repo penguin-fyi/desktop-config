@@ -1,18 +1,11 @@
 " ==========================
-" vimrc
-" ==========================
-
-" BTW
-runtime! archlinux.vim
 
 colorscheme default
-set term=screen-256color
+" set term=screen-256color
 
 " Enable filetype
 if has("autocmd")
-  filetype on
-  filetype plugin on
-  filetype indent on
+  filetype plugin indent on
 endif
 
 " Enable syntax highlighting
@@ -63,6 +56,16 @@ set pastetoggle=<leader>z
 " Backspace nice
 set backspace=indent,eol,start
 
+" Save undo history
+if !isdirectory($HOME."/.cache/nvim/undo")
+    call mkdir($HOME."/.cache/nvim/undo", "", 0700)
+endif
+set undodir=~/.cache/nvim/undo
+set undofile
+
+" Move viminfo
+set viminfo+=n~/.cache/nvim/viminfo
+ 
 " Search options
 set hlsearch
 set incsearch
@@ -99,17 +102,17 @@ augroup Local
 augroup END
 
 " CWD follows current buffer
-autocmd Local BufEnter * silent! lcd %:p:h
-
+"autocmd Local BufEnter * silent! lcd %:p:h
+autocmd BufEnter * if &modifiable | silent! lcd %:p:h | endif
 
 " ==========================
 " Mappings
 " ==========================
 
 
-" Edit and reload vimrc
-nnoremap <silent> <leader>ve :e $MYVIMRC<CR>
-nnoremap <silent> <leader>vr :so $MYVIMRC<CR>
+"" " Edit and reload vimrc
+"" nnoremap <silent> <leader>ve :e $MYVIMRC<CR>
+"" nnoremap <silent> <leader>vr :so $MYVIMRC<CR>
 
 " Save
 nnoremap <leader>s :w<cr>
@@ -129,7 +132,3 @@ noremap <C-k> <C-w>k
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
 
-" silent! helptags ALL
-
-
-" vim: set ft=vim:

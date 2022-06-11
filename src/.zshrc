@@ -42,6 +42,15 @@ setopt inc_append_history           # add commands to HISTFILE in order of execu
 setopt append_history               # append to history
 setopt hist_find_no_dups            # don't show dups in history search
 
+# basics
+export PAGER=less
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+export DIFFPROG="nvim -d $1"
+export LESS='-RFW'
+
+alias vim=nvim
+
 # load plugins
 plugdir=/usr/share/zsh/plugins
 source $plugdir/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
