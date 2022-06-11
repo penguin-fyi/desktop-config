@@ -11,11 +11,13 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 # Common environment variables
 export TERMINAL=kitty
-export EDITOR=vim
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 export FILEXP=pcmanfm
 export BROWSER=firefox
 
-# Load xsettingsd (must be started before awesome)
+# Load Xsettings & Xresources
 xsettingsd &
+xrdb -merge "$HOME/.Xresources"
 
 # vim: set ft=sh ts=2 sw=0 et:
