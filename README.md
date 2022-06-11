@@ -1,3 +1,3 @@
 # desktop-config
 
-Penguin Desktop /etc/skel
+[Penguin Desktop](https://penguin.fyi) `/etc/skel` files

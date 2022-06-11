@@ -1,26 +1,26 @@
 ! .Xresources
 
 !! -- Colors --
-*color0:            #000000
-*color1:            #c23621
-*color2:            #25bc24
-*color3:            #adad27
-*color4:            #492ee1
-*color5:            #d338d3
-*color6:            #33bbc8
-*color7:            #cbcccd
-*color8:            #818383
-*color9:            #fc391f
-*color10:           #31e722
-*color11:           #eaec23
-*color12:           #5833ff
-*color13:           #f935f8
-*color14:           #14f0f0
-*color15:           #e9ebeb
-*background:        #000000
-*foreground:        #cbcccd
-*cursorColor:       #31e722
-*cursorUL:          #31e722
+*color0:                    #000000
+*color1:                    #c23621
+*color2:                    #25bc24
+*color3:                    #adad27
+*color4:                    #492ee1
+*color5:                    #d338d3
+*color6:                    #33bbc8
+*color7:                    #cbcccd
+*color8:                    #818383
+*color9:                    #fc391f
+*color10:                   #31e722
+*color11:                   #eaec23
+*color12:                   #5833ff
+*color13:                   #f935f8
+*color14:                   #14f0f0
+*color15:                   #e9ebeb
+*background:                #000000
+*foreground:                #cbcccd
+*cursorColor:               #31e722
+*cursorUL:                  #31e722
 
 !! --- Xterm ---
 XTerm.termName:             xterm-256color
@@ -39,7 +39,6 @@ xterm*locale:               UTF-8
 xterm*utf8:                 3
 xterm*utf8Fonts:            2
 xterm*eightBitInput:        true
-!xterm*saveLines:            1000
 xterm*scrollKey:            true
 xterm*scrollTtyOutput:      false
 xterm*scrollBar:            false
@@ -60,6 +59,5 @@ Xft.dpi:                    96
 
 !! --- Cursor ---
 Xcursor.theme:              "Neutral"
-!Xcursor.size:              16
 
 ! vim: set ft=xdefaults:
