@@ -2,7 +2,7 @@ configuration {
     modi:                   "drun,run,window";
     terminal:               "rofi-sensible-terminal";
     show-icons:             true;
-    sort:                   true;
+    sort:                   false;
     fixed-num-lines:        false;
     click-to-exit:          true;
     yoffset:                -120;
