@@ -7,7 +7,6 @@ export PATH=$PATH:$HOME/.bin
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
-#export XDG_CURRENT_DESKTOP=AwesomeWM
 
 # Common environment variables
 export TERMINAL=kitty
@@ -16,8 +15,7 @@ export EDITOR="$VISUAL"
 export FILEXP=pcmanfm
 export BROWSER=firefox
 
-# Load Xsettings & Xresources
+# Load Xsettings
 xsettingsd &
-xrdb -merge "$HOME/.Xresources"
 
 # vim: set ft=sh ts=2 sw=0 et:
