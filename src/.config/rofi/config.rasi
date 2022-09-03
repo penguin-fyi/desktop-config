@@ -5,7 +5,7 @@ configuration {
     sort:                   false;
     fixed-num-lines:        false;
     click-to-exit:          true;
-    yoffset:                -120;
+    yoffset:                -20;
 
     display-drun:           "Start >";
     display-run:            "Run >";
