@@ -1,5 +1,6 @@
-# desktop-config
+# penguin-desktop-config
 
-Source files for `penguin-desktop-config` [PKGBUILD](https://github.com/penguin-fyi/pkgbuilds/blob/main/penguin-desktop-config/PKGBUILD)
+Source files for `penguin-desktop-config` [PKGBUILD](https://github.com/penguin-fyi/pkgbuilds/blob/main/penguin-desktop-config/)
 
-[penguin Desktop](https://github.com/penguin-fyi) `/etc/skel` files
+## Configs
+- etc/skel
